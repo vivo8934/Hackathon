@@ -36,7 +36,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container">
+<div class="col-sm-12">
   <h1>Customer's Feedback</h1>
 <!-- App description -->
   <p>This app allow's your to interact with us, based on your experience
@@ -45,9 +45,24 @@
 </p>
 
 </div>
+<div class="col-sm-12">
+  <div class="col-sm-2">
+
+  </div>
+  <div class="col-sm-4">
+
+    <input class="btn btn-success" type= "button" name="Audio" value="Audio" id = 'button'><br><br>
+  </div>
+  <div class="col-sm-4">
+    <input class="btn btn-success" id="ratings" type="button" value="Rating">
+
+  </div>
+<div class="col-sm-2">
+
+</div>
+</div>
 <div class= "Recorder">
 <!-- Recording Menu and it button -->
-<input type= "button" name="Audio" value="Audio" class = 'button'><br><br>
 
 <div class = "Audio-Menu">
 
@@ -61,7 +76,106 @@
 <audio controls autoplay></audio>
 
 </div>
+<div id="rate" class="col-sm-12">
+  <div class="col-sm-2">
 
+  </div>
+  <div class="col-sm-8">
+    <form class="survey" action="index.html" method="submit">
+    <table class="table table-bordered" cellspacing="100">
+
+    <tr>
+
+      <td></td>
+
+      <td>Very<br>Bad</td>
+
+      <td>Bad</td>
+
+      <td>Good</td>
+
+      <td>Very<br/>Good</td>
+
+  </tr>
+
+    <tr>
+
+      <td class="griditem">When applying how was the application process</td>
+
+      <td><input type=radio  name="griditem1" value="1"></td>
+
+      <td><input type=radio  name="griditem1" value="2"></td>
+
+      <td><input type=radio  name="griditem1" value="3"></td>
+
+      <td><input type=radio  name="griditem1" value="4"></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="griditem">How was the lead time for your loan application</td>
+
+      <td><input type=radio  name="griditem2" value="1"></td>
+
+      <td><input type=radio  name="griditem2" value="2"></td>
+
+      <td><input type=radio  name="griditem2" value="3"></td>
+
+      <td><input type=radio  name="griditem1" value="4"></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="griditem">How did you feel when repaying back the loan</td>
+
+      <td><input type=radio  name="griditem2" value="1"></td>
+
+      <td><input type=radio  name="griditem2" value="2"></td>
+
+      <td><input type=radio  name="griditem2" value="3"></td>
+
+      <td><input type=radio  name="griditem1" value="4"></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="griditem">How would you rate our loan to others</td>
+
+      <td><input type=radio  name="griditem2" value="1"></td>
+
+      <td><input type=radio  name="griditem2" value="2"></td>
+
+      <td><input type=radio  name="griditem2" value="3"></td>
+
+      <td><input type=radio  name="griditem1" value="4"></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="griditem">How do you feel on what you spend the loan money on</td>
+
+      <td><input type=radio  name="griditem2" value="1"></td>
+
+      <td><input type=radio  name="griditem2" value="2"></td>
+
+      <td><input type=radio  name="griditem2" value="3"></td>
+
+      <td><input type=radio  name="griditem1" value="4"></td>
+
+    </tr>
+
+   </table>
+  </form>
+  </div>
+  <div class="col-sm-2">
+
+  </div>
+</div>
 </div>
   </body>
+  <script src="main.js" charset="utf-8"></script>
 </html>

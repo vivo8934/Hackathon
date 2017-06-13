@@ -1,7 +1,10 @@
-var myBtn = document.querySelector('.button');
+var myBtn = document.querySelector('#button');
 var Menu = document.querySelector('.Audio-Menu');
 var audio = document.querySelector('audio');
 var startRec = document.getElementById('btn-start-recording');
+var rateUsBtn = document.querySelector('#ratings')
+var rateUsDiv = document.querySelector('#rate')
+
 
 var recorder; // globally accessible
 Menu.style.display = 'none';
@@ -10,7 +13,19 @@ Menu.style.display = 'none';
 myBtn.addEventListener('click', function(){
  myBtn.style.display = 'none';
   Menu.style.display = 'block';
+  rateUsBtn.style.display = 'none';
 });
+rateUsDiv.style.display = 'none';
+
+// showing the Menu Of recording
+rateUsBtn.addEventListener('click', function(){
+ rateUsBtn.style.display = 'none';
+  rateUsDiv.style.display = 'block';
+  myBtn.style.display = 'none';
+});
+
+
+
 
 // Checking if we have microphone for recording purpose
  function captureMicrophone(callback) {
