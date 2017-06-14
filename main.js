@@ -2,6 +2,7 @@ var myBtn = document.querySelector('#button');
 var Menu = document.querySelector('.Audio-Menu');
 var audio = document.querySelector('audio');
 var startRec = document.getElementById('btn-start-recording');
+var stopRec = document.getElementById('btn-stop-recording');
 var rateUsBtn = document.querySelector('#ratings')
 var rateUsDiv = document.querySelector('#rate')
 
@@ -24,9 +25,6 @@ rateUsBtn.addEventListener('click', function(){
   myBtn.style.display = 'none';
 });
 
-
-
-
 // Checking if we have microphone for recording purpose
  function captureMicrophone(callback) {
      navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia || navigator.webkitGetUserMedia;
@@ -40,7 +38,7 @@ rateUsBtn.addEventListener('click', function(){
 startRec.addEventListener('click', function(){
     this.disabled = true;
     captureMicrophone(function(microphone) {
-        audio.src = URL.createObjectURL(microphone);
+        audio.src = window.URL.createObjectURL(microphone);
         audio.play();
         recorder = RecordRTC(microphone, {
             type: 'audio',
@@ -58,8 +56,8 @@ startRec.addEventListener('click', function(){
 
 // stop recording
 
-document.getElementById('btn-stop-recording').onclick = function() {
-    this.disabled = false;
+stopRec.addEventListener('click', function(){
+    this.disabled = true;
     recorder.stopRecording(stopRecordingCallback);
   audio.stop();
-};
+});
