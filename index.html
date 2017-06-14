@@ -1,181 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hackathon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hackathon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdn.WebRTC-Experiment.com/RecordRTC.js"></script>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MyCustomer</a>
+        <a class="navbar-brand" href="#">MYCUSTOMER</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="header" id="header">
+    <div class="container">
+      <div class="col-lg-12">
+        <h1 class="text-center">Customer's Feedback</h1>
+        <!-- App description -->
+        <p class="text-center">This app allow's your to interact with us, based on your experience with it, so we know where to improve and serve our customer's best interest, thank you for using this app as your help provider Use the form below to send us your comments or
+          report any problems you experienced finding information on our website. We read all feedback carefully, but please note that we cannot respond to the comments you submit.
+        </p><br><br>
+        <h4 class="text-center">FEEDBACK OPTIONS</h4>
+        <div class="col-lg-12">
+          <div class="col-md-6">
+            <input class="btn btn-success btn-md" type="button" name="Audio" value="Audio" id='button'><br><br>
+
+          </div>
+          <div class="col-md-6">
+            <input class="btn btn-success btn-md" id="ratings" type="button" value="Rate Us">
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
-
-      </ul>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<div class="col-sm-12">
-  <h1>Customer's Feedback</h1>
-<!-- App description -->
-  <p>This app allow's your to interact with us, based on your experience
-  with it, so we know where to improve and serve our customer's best
-  interest, thank you for using this app as your help provider
-</p>
-
-</div>
-<div class="col-sm-12">
-  <div class="col-sm-2">
-
   </div>
-  <div class="col-sm-4">
+  <div class="Recorder">
+    <!-- Recording Menu and it button -->
 
-    <input class="btn btn-success" type= "button" name="Audio" value="Audio" id = 'button'><br><br>
+    <div class="Audio-Menu">
+
+      <h1>Recording Customer</h1>
+
+      <br>
+      <button id="btn-start-recording">Start Recording</button>
+      <button id="btn-stop-recording">Stop Recording</button>
+
+      <hr>
+      <audio controls autoplay></audio>
+
+    </div>
+    <div id="rate" class="col-sm-12">
+      <div class="col-sm-2">
+
+      </div>
+
+      <div class="col-sm-8">
+        <table class="table table-bordered" cellspacing="100">
+
+          <tr>
+
+            <td></td>
+
+            <td>Very<br>Bad</td>
+
+            <td>Bad</td>
+
+            <td>Good</td>
+
+            <td>Very<br/>Good</td>
+
+          </tr>
+
+          <tr class="appProcessQ1">
+
+            <td class="griditem">When applying how was the application process</td>
+
+            <td><input type=radio name="griditem1" value="1"></td>
+
+            <td><input type=radio name="griditem1" value="2"></td>
+
+            <td><input type=radio name="griditem1" value="3"></td>
+
+            <td><input type=radio name="griditem1" value="4"></td>
+
+          </tr>
+
+          <tr>
+
+            <td class="griditem">How was the lead time for your loan application</td>
+
+            <td><input type=radio name="griditem2" value="1"></td>
+
+            <td><input type=radio name="griditem2" value="2"></td>
+
+            <td><input type=radio name="griditem2" value="3"></td>
+
+            <td><input type=radio name="griditem2" value="4"></td>
+
+          </tr>
+
+          <tr>
+
+            <td class="griditem">How did you feel when repaying back the loan</td>
+
+            <td><input type=radio name="griditem3" value="1"></td>
+
+            <td><input type=radio name="griditem3" value="2"></td>
+
+            <td><input type=radio name="griditem3" value="3"></td>
+
+            <td><input type=radio name="griditem3" value="4"></td>
+
+          </tr>
+
+          <tr>
+
+            <td class="griditem">How would you rate our loan to others</td>
+
+            <td><input type=radio name="griditem4" value="1"></td>
+
+            <td><input type=radio name="griditem4" value="2"></td>
+
+            <td><input type=radio name="griditem4" value="3"></td>
+
+            <td><input type=radio name="griditem4" value="4"></td>
+
+          </tr>
+
+          <tr>
+
+            <td class="griditem">How do you feel on what you spend the loan money on</td>
+
+            <td><input type=radio name="griditem5" value="1"></td>
+
+            <td><input type=radio name="griditem5" value="2"></td>
+
+            <td><input type=radio name="griditem5" value="3"></td>
+
+            <td><input type=radio name="griditem5" value="4"></td>
+
+          </tr>
+
+        </table>
+        <input class="btn btn-primary btn-md submitBtn" type="button" name="" value="Submit">
+
+
+
+
+      </div>
+      <div class="col-sm-2">
+
+      </div>
+    </div>
   </div>
-  <div class="col-sm-4">
-    <input class="btn btn-success" id="ratings" type="button" value="Rating">
+</body>
+<script src="main.js" charset="utf-8"></script>
+<script src="getValues.js" charset="utf-8"></script>
 
-  </div>
-<div class="col-sm-2">
-
-</div>
-</div>
-<div class= "Recorder">
-<!-- Recording Menu and it button -->
-
-<div class = "Audio-Menu">
-
- <h1>Recording Customer</h1>
-
-<br>
-<button id="btn-start-recording">Start Recording</button>
-<button id="btn-stop-recording">Stop Recording</button>
-
-<hr>
-<audio controls autoplay></audio>
-
-</div>
-<div id="rate" class="col-sm-12">
-  <div class="col-sm-2">
-
-  </div>
-  <div class="col-sm-8">
-    <form class="survey" action="index.html" method="submit">
-    <table class="table table-bordered" cellspacing="100">
-
-    <tr>
-
-      <td></td>
-
-      <td>Very<br>Bad</td>
-
-      <td>Bad</td>
-
-      <td>Good</td>
-
-      <td>Very<br/>Good</td>
-
-  </tr>
-
-    <tr>
-
-      <td class="griditem">When applying how was the application process</td>
-
-      <td><input type=radio  name="griditem1" value="1"></td>
-
-      <td><input type=radio  name="griditem1" value="2"></td>
-
-      <td><input type=radio  name="griditem1" value="3"></td>
-
-      <td><input type=radio  name="griditem1" value="4"></td>
-
-    </tr>
-
-    <tr>
-
-      <td class="griditem">How was the lead time for your loan application</td>
-
-      <td><input type=radio  name="griditem2" value="1"></td>
-
-      <td><input type=radio  name="griditem2" value="2"></td>
-
-      <td><input type=radio  name="griditem2" value="3"></td>
-
-      <td><input type=radio  name="griditem1" value="4"></td>
-
-    </tr>
-
-    <tr>
-
-      <td class="griditem">How did you feel when repaying back the loan</td>
-
-      <td><input type=radio  name="griditem2" value="1"></td>
-
-      <td><input type=radio  name="griditem2" value="2"></td>
-
-      <td><input type=radio  name="griditem2" value="3"></td>
-
-      <td><input type=radio  name="griditem1" value="4"></td>
-
-    </tr>
-
-    <tr>
-
-      <td class="griditem">How would you rate our loan to others</td>
-
-      <td><input type=radio  name="griditem2" value="1"></td>
-
-      <td><input type=radio  name="griditem2" value="2"></td>
-
-      <td><input type=radio  name="griditem2" value="3"></td>
-
-      <td><input type=radio  name="griditem1" value="4"></td>
-
-    </tr>
-
-    <tr>
-
-      <td class="griditem">How do you feel on what you spend the loan money on</td>
-
-      <td><input type=radio  name="griditem2" value="1"></td>
-
-      <td><input type=radio  name="griditem2" value="2"></td>
-
-      <td><input type=radio  name="griditem2" value="3"></td>
-
-      <td><input type=radio  name="griditem1" value="4"></td>
-
-    </tr>
-
-   </table>
-  </form>
-  </div>
-  <div class="col-sm-2">
-
-  </div>
-</div>
-</div>
-  </body>
-  <script src="main.js" charset="utf-8"></script>
 </html>
