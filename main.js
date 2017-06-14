@@ -58,6 +58,6 @@ startRec.addEventListener('click', function(){
 
 stopRec.addEventListener('click', function(){
     this.disabled = true;
-    recorder.stopRecording(stopRecordingCallback);
+    recorder.stopRecording();
   audio.stop();
 });
