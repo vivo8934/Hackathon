@@ -34,6 +34,7 @@ rateUsBtn.addEventListener('click', function(){
          console.error(error);
      });
 }
+//do it 
 
 // Start to record button
 startRec.addEventListener('click', function(){
@@ -59,6 +60,6 @@ startRec.addEventListener('click', function(){
 
 stopRec.addEventListener('click', function(){
     this.disabled = true;
-    recorder.stopRecording();
+    recorder.stopRecording(stopRecordingCallback);
   audio.stop();
 });
