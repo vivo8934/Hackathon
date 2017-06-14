@@ -1,3 +1,6 @@
 body{
-  background-image: url("88521.jpg");
+  /*background-image: url("88521.jpg");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*opacity: 0.1;*/
 }

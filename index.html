@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MyCustomer</a>
+      <a class="navbar-brand" href="#">MYCUSTOMER</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,49 +34,48 @@
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>
+  </nav>
+  <div class="header" id="header">
+  <div class="container">
+    <div class="col-lg-12">
+      <h1 class="text-center">Customer's Feedback</h1>
+      <!-- App description -->
+      <p>This app allow's your to interact with us, based on your experience
+        with it, so we know where to improve and serve our customer's best
+        interest, thank you for using this app as your help provider
+      </p>
+      <h4 class="text-center">FEEDBACK OPTIONS</h4>
+      <div class="col-lg-12">
+        <div class="col-md-4">
+          <input class="btn btn-success" type= "button" name="Audio" value="Audio" id = 'button'><br><br>
 
-<div class="col-sm-12">
-  <h1>Customer's Feedback</h1>
-<!-- App description -->
-  <p>This app allow's your to interact with us, based on your experience
-  with it, so we know where to improve and serve our customer's best
-  interest, thank you for using this app as your help provider
-</p>
+        </div>
+        <div class="col-md-4">
+          <input class="btn btn-success" id="ratings" type="button" value="RATE US">
 
-</div>
-<div class="col-sm-12">
-  <div class="col-sm-2">
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   </div>
-  <div class="col-sm-4">
+  <div class= "Recorder">
+  <!-- Recording Menu and it button -->
 
-    <input class="btn btn-success" type= "button" name="Audio" value="Audio" id = 'button'><br><br>
+  <div class = "Audio-Menu">
+
+  <h1>Recording Customer</h1>
+
+  <br>
+  <button id="btn-start-recording">Start Recording</button>
+  <button id="btn-stop-recording">Stop Recording</button>
+
+  <hr>
+  <audio controls autoplay></audio>
+
   </div>
-  <div class="col-sm-4">
-    <input class="btn btn-success" id="ratings" type="button" value="Rating">
-
-  </div>
-<div class="col-sm-2">
-
-</div>
-</div>
-<div class= "Recorder">
-<!-- Recording Menu and it button -->
-
-<div class = "Audio-Menu">
-
- <h1>Recording Customer</h1>
-
-<br>
-<button id="btn-start-recording">Start Recording</button>
-<button id="btn-stop-recording">Stop Recording</button>
-
-<hr>
-<audio controls autoplay></audio>
-
-</div>
-<div id="rate" class="col-sm-12">
+  <div id="rate" class="col-sm-12">
   <div class="col-sm-2">
 
   </div>
@@ -98,7 +97,7 @@
 
   </tr>
 
-    <tr>
+    <tr class="appProcessQ1">
 
       <td class="griditem">When applying how was the application process</td>
 
@@ -174,8 +173,7 @@
   <div class="col-sm-2">
 
   </div>
-</div>
-</div>
-  </body>
-  <script src="main.js" charset="utf-8"></script>
+  </div>
+  </div>
+  </body>  <script src="main.js" charset="utf-8"></script>
 </html>
