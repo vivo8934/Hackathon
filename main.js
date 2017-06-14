@@ -3,9 +3,9 @@ var Menu = document.querySelector('.Audio-Menu');
 var audio = document.querySelector('audio');
 var startRec = document.getElementById('btn-start-recording');
 var stopRec = document.getElementById('btn-stop-recording');
-var rateUsBtn = document.querySelector('#ratings')
-var rateUsDiv = document.querySelector('#rate')
-var header = document.getElementById('header')
+var rateUsBtn = document.querySelector('#ratings');
+var rateUsDiv = document.querySelector('#rate');
+var header = document.getElementById('header');
 
 
 var recorder; // globally accessible
